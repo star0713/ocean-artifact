@@ -1,7 +1,7 @@
 {
   "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
   "functions": {
-    "api/test.js": {
+    "api/index.js": {
       "includeFiles": "/**"
     }
   }
