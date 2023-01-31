@@ -16,10 +16,7 @@
     "start": "http-server",
     "vercel-build": "amazon-linux-extras install libuuid-devel libmount-devel zlib && cp /lib64/{libuuid,libmount,libblkid,libz}.so.1 node_modules/canvas/build/Release/ && npm run build"
   },
-  "engines": {
-    "npm": ">8.0.0 <=8.15.0",
-    "node": ">16.0.0 <=16.17.0"
-  },
+  
   "author": "",
   "license": "ISC",
   "dependencies": {
