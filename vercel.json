@@ -1,8 +1,17 @@
 {
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "dist/**, src/**, temp/**, styles/**, data/**"
+  "version": 2,
+  "name": "artifact-api",
+  "builds" : [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+
+      "dest": "index.js"
+    }
+  ]
 }
