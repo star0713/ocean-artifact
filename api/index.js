@@ -1,8 +1,8 @@
 
 const Window = require('window');
-const {Blob} = require('../src/art/tools/blob.js');
+// const {Blob} = require('../src/art/tools/blob.js');
 global.window = new Window();
-global.window.Blob = Blob;
+// global.window.Blob = Blob;
 global.document = global.window.document;
 global.screen = global.window.screen;
 global.navigator = global.window.navigator;
