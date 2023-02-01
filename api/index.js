@@ -13,8 +13,8 @@ const path = require('path');
 const cors = require('cors');
 const rimraf = require('rimraf');
 const express = require('express');
-const getHash = require("../src/api/tools.js");
-const {createMetadata} = require("../src/api/metadata");
+// const getHash = require("../src/api/tools.js");
+// const {createMetadata} = require("../src/api/metadata");
 
 // const {render1} = require("../src/api/render-1.js");
 // const {render2} = require("../src/api/render-2.js");
