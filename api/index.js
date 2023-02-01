@@ -13,18 +13,18 @@ const path = require('path');
 const cors = require('cors');
 const rimraf = require('rimraf');
 const express = require('express');
-// const getHash = require("../src/api/tools.js");
-// const {createMetadata} = require("../src/api/metadata");
+const getHash = require("../src/api/tools.js");
+const {createMetadata} = require("../src/api/metadata");
 
-// const {render1} = require("../src/api/render-1.js");
-// const {render2} = require("../src/api/render-2.js");
-// const {render3} = require("../src/api/render-3.js");
-// const {render4} = require("../src/api/render-4.js");
-// const {render5} = require("../src/api/render-5.js");
-// const {render6} = require("../src/api/render-6.js");
-// const {render7} = require("../src/api/render-7.js");
-// const {render8} = require("../src/api/render-8.js");
-// const {render9} = require("../src/api/render-9.js");
+const {render1} = require("../src/api/render-1.js");
+const {render2} = require("../src/api/render-2.js");
+const {render3} = require("../src/api/render-3.js");
+const {render4} = require("../src/api/render-4.js");
+const {render5} = require("../src/api/render-5.js");
+const {render6} = require("../src/api/render-6.js");
+const {render7} = require("../src/api/render-7.js");
+const {render8} = require("../src/api/render-8.js");
+const {render9} = require("../src/api/render-9.js");
 
 // App start
 const app = express();
@@ -260,7 +260,7 @@ app.use(cors({
 
 // favicon 204 No content
 app.get('/favicon.ico', (req, res) => res.status(204).send('No content'));
-app.get('/', (req, res) => {
+app.get('api/', (req, res) => {
     res.send("test express serveless")
 })
 // Server Start
