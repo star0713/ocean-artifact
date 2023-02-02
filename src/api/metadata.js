@@ -5,7 +5,7 @@ const collectionsInit = require("../data/utils/collections");
 const data = require('../art/config/config');
 const sketches = require('../art/config/sketches');
 
-const apiUrl = "https://artifact-api-5tgi2.ondigitalocean.app/" // Must be "/" at the end
+const apiUrl = "https://orkhan-artifact-l2a04fjh1-sparkblox-admin-dashboard.vercel.app/" // Must be "/" at the end
 const titlePrefix = "Artifact Nft"
 const description = "Description about the Artifact Nft"
 const external_url = "external_url"
@@ -26,8 +26,8 @@ exports.createMetadata = async function (hash, sketchid, tokenid) {
     config.collection = collections[collectionId];
 
     async function getData() {
-        const pathData = "./data/" + config.collection.slug + ".json";
-        const pathTrns = "./data/" + config.collection.slug + "-transactions.json";
+        const pathData ="./data/" + config.collection.slug + ".json";
+        const pathTrns ="./data/" + config.collection.slug + "-transactions.json";
 
         let getData = fs.readFileSync(pathData);
         config.collectionData = JSON.parse(getData);

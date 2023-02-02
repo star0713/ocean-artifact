@@ -5,6 +5,14 @@
     {
       "src": "index.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "dist/**/*",
+      "use": "@now/static"
+    },
+    {
+      "src": "data/**/*",
+      "use": "@now/static"
     }
   ],
   "routes": [
@@ -13,5 +21,10 @@
 
       "dest": "index.js"
     }
-  ]
+  ],
+  "functions" : {
+    "index.js": {
+      "includeFiles": "/**"
+    }
+  }
 }

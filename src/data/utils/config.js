@@ -2,7 +2,7 @@ module.exports = function () {
     return {
         etherscan: {
             endpoint: "https://api.etherscan.io/api",
-            apikey: "2GGQMDEQ7F1Z9PYWAHV4KSEPSKAB7KQ2GT"
+            apikey: "CCIKGKR5PSF6ZBQVCZYHYUTSX97U95TUVA"
         },
         opensea: {
             endpoint: "https://api.opensea.io/api/v1",

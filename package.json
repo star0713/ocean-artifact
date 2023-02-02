@@ -14,15 +14,15 @@
     "demo-start": "http-server -c1",
     "api-start": "node ./index.js",
     "start": "http-server",
-    "vercel-build": "npm run build"
+    "vercel-build": "yum install libuuid-devel libmount-devel zlib && cp /lib64/{libuuid,libmount,libblkid,libz}.so.1 node_modules/canvas/build/Release/ && npm run build"
   },
-  
+
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
     "bignumber.js": "^9.1.0",
-    "canvas": "^2.6.1",
+    "canvas": "^2.9.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "get-image-colors": "^4.0.1",
