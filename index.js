@@ -269,5 +269,5 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "./index.html"));
 })
 // Server Start
-app.listen(80, () => console.log(`Artifact NFT App listening on port 3000!`));
+app.listen(80, () => console.log(`Artifact NFT App listening on port 80!`));
 module.exports = app;
